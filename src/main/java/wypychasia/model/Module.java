@@ -20,7 +20,7 @@ public class Module {
     private float version;
 
     @ManyToOne
-    private Product product;
+    private Product module_product;
 
 
 }

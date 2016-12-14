@@ -17,6 +17,6 @@ public class Code {
 
     private String code_content;
 
-    @ManyToOne
-    private Product product;
+   @ManyToOne
+   private Product product_id;
 }

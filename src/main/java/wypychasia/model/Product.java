@@ -20,7 +20,7 @@ public class Product {
     private float version_number;
 
     @ManyToOne
-    private Company company;
+    private Company company_id;
 
 
 

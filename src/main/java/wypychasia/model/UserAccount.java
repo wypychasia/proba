@@ -8,16 +8,16 @@ import javax.persistence.*;
 @Entity
 public class UserAccount {
 
+    private Long id;
     @javax.persistence.Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long user_id;
+    public Long getId(){return id;}
+
+    public void setId(Long id){this.id=id;}
 
     private String login;
 
     private String password;
-
-    @ManyToOne
-    private Company company;
 
     public String getPassword() {
         return password;
@@ -35,19 +35,5 @@ public class UserAccount {
         this.login = login;
     }
 
-    public long getId() {
-        return user_id;
-    }
 
-    public void setId(long id) {
-        user_id = id;
-    }
-
-    public Company getCompany() {
-        return company;
-    }
-
-    public void setCompany(Company company) {
-        this.company = company;
-    }
 }

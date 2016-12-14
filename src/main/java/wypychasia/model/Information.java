@@ -20,5 +20,5 @@ public class Information {
     private String info_content;
 
     @ManyToOne
-    private Code code;
+    private Code code_id;
 }

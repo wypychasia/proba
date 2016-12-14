@@ -6,7 +6,7 @@
 </head>
 <body>
 <div th:each="user : ${listaUzytkownikow}">
-    <p th:text="${user.id}"></p>
+    <p th:text="${user.login}"></p>
 </div>
 <p th:if="${#lists.isEmpty(listaUzytkownikow)}">Sorry, no results were found.</p>
 </body>
