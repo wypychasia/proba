@@ -2,7 +2,7 @@ package wypychasia;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
-import wypychasia.model.Uzytkownik;
+import wypychasia.model.UserAccount;
 import wypychasia.repository.UserRepository;
 
 import javax.annotation.PostConstruct;
@@ -18,7 +18,7 @@ public class Loader {
     @Transactional
     public void run() {
         for(int i=0; i<100; i++) {
-            Uzytkownik user = new Uzytkownik();
+            UserAccount user = new UserAccount();
             user.setLogin("aaa");
             user.setPassword("aaa");
             userRepository.save(user);

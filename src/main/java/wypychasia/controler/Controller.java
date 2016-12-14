@@ -3,7 +3,7 @@ package wypychasia.controler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import wypychasia.model.Uzytkownik;
+import wypychasia.model.UserAccount;
 import wypychasia.service.UserService;
 
 import java.util.List;
@@ -25,7 +25,7 @@ public class Controller {
 
     @GetMapping("/main")
     public String main(Model model) {
-        List<Uzytkownik> lista = userService.findAllUser();
+        List<UserAccount> lista = userService.findAllUser();
         model.addAttribute("listaUzytkownikow", lista);
         return "main";
     }

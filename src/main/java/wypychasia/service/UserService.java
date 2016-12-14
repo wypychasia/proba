@@ -2,7 +2,7 @@ package wypychasia.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import wypychasia.model.Uzytkownik;
+import wypychasia.model.UserAccount;
 import wypychasia.repository.UserRepository;
 
 import java.util.List;
@@ -15,7 +15,7 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    public List<Uzytkownik> findAllUser(){
+    public List<UserAccount> findAllUser(){
         return userRepository.findAll();
     }
 }

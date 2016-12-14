@@ -6,11 +6,11 @@ import javax.persistence.*;
  * Created by wypychasia on 05.12.16.
  */
 @Entity
-public class Uzytkownik {
+public class UserAccount {
 
     @javax.persistence.Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long Id;
+    private long user_id;
 
     private String login;
 
@@ -36,11 +36,11 @@ public class Uzytkownik {
     }
 
     public long getId() {
-        return Id;
+        return user_id;
     }
 
     public void setId(long id) {
-        Id = id;
+        user_id = id;
     }
 
     public Company getCompany() {
